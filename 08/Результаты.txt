@@ -1,0 +1,119 @@
+Замеры времени создания и обращения:
+
+For normal class: 0.3294508457183838
+For class with slots: 0.2815420627593994
+For weakref class: 0.9417381286621094
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Профилирование вызовов:
+
+         500007 function calls in 0.329 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.081    0.081    0.329    0.329 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:55(run_star)
+        1    0.133    0.133    0.248    0.248 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:58(<listcomp>)
+   500000    0.115    0.000    0.115    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:32(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:9(profiler)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method time.time}
+
+
+         500007 function calls in 0.282 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.084    0.084    0.282    0.282 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:66(run_star_slots)
+        1    0.152    0.152    0.198    0.198 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:69(<listcomp>)
+   500000    0.046    0.000    0.046    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:41(__init__)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:9(profiler)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method time.time}
+
+
+         2000007 function calls in 0.942 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.076    0.076    0.942    0.942 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:77(run_star_weakref)
+        1    0.189    0.189    0.866    0.866 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:80(<listcomp>)
+   500000    0.547    0.000    0.677    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:49(__init__)
+  1500000    0.130    0.000    0.130    0.000 {built-in method _weakref.proxy}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
+        1    0.000    0.000    0.000    0.000 C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py:9(profiler)
+        2    0.000    0.000    0.000    0.000 {built-in method time.time}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Профилирование памяти:
+
+For normal class: 0.5650842189788818
+Filename: C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    54     20.0 MiB     20.0 MiB           1   @profile
+    55                                         def run_star(n):
+    56     20.0 MiB      0.0 MiB           1       t = time.time()
+    57     21.7 MiB      1.7 MiB       10003       star_normal = [StarNormal(1.9885 * 10**30, 695_700, 4.6*10**9) for i in range(n)]
+    58     22.3 MiB      0.0 MiB       10001       for star in star_normal:
+    59     22.3 MiB      0.0 MiB       10000           star.mass -= 100_000
+    60     22.3 MiB      0.6 MiB       10000           star.age += 1
+    61     22.3 MiB      0.0 MiB       10000           star.radius = 700_000
+    62     22.3 MiB      0.0 MiB           1       print(f"For normal class: {time.time()-t}")
+
+
+For class with slots: 0.5630905628204346
+Filename: C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    65     22.4 MiB     22.4 MiB           1   @profile
+    66                                         def run_star_slots(n):
+    67     22.4 MiB      0.0 MiB           1       t = time.time()
+    68     22.4 MiB      0.0 MiB       10003       star_slots = [StarSlots(1.9885 * 10 ** 30, 695_700, 4.6 * 10 ** 9) for i in range(n)]
+    69     22.4 MiB      0.0 MiB       10001       for star in star_slots:
+    70     22.4 MiB      0.0 MiB       10000           star.mass -= 100_000
+    71     22.4 MiB      0.0 MiB       10000           star.age += 1
+    72     22.4 MiB      0.0 MiB       10000           star.radius = 700_000
+    73     22.4 MiB      0.0 MiB           1       print(f"For class with slots: {time.time()-t}")
+
+
+For weakref class: 1.0140178203582764
+Filename: C:\Users\Artem\PycharmProjects\vk_deep_python\08\profiling.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    76     22.4 MiB     22.4 MiB           1   @profile
+    77                                         def run_star_weakref(n):
+    78     22.4 MiB      0.0 MiB           1       t = time.time()
+    79     24.0 MiB      1.4 MiB       20004       star_weakref = [StarWeakref(WeakFloat(1.9885 * 10 ** 30),
+    80     24.0 MiB      0.0 MiB       10000                                   WeakFloat(695_700),
+    81     24.0 MiB      0.2 MiB       10001                                   WeakFloat(4.6 * 10 ** 9)) for i in range(n)]
+    82     24.0 MiB      0.0 MiB       10001       for star in star_weakref:
+    83     24.0 MiB      0.0 MiB       10000           try:
+    84     24.0 MiB      0.0 MiB       10000               star.mass += 100_000
+    85                                                     star.age += 1
+    86                                                     star.radius = 700_000
+    87     24.0 MiB      0.0 MiB       10000           except ReferenceError:
+    88     24.0 MiB      0.0 MiB       10000               pass
+    89     24.0 MiB      0.0 MiB           1       print(f"For weakref class: {time.time()-t}")
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Выводы из результатов замера времени создания и обращения к экземлярам класса:
+-Наибольшим быстродействием обладает класс, реализованный через Slots, за ним идут обычный класс и идет weakref.
+Из результатов профилирования вызовов:
+-Наименьшим общим временем вызова обладает класс, реализованный через slots, за ним идут обычный класс и weakref
+Из результатов профиилирования памяти:
+-Наименьшими затратами памяти обладает класс, реализованный через slots, за ним идут weakref и обычный класс
+-Профилировщик использует значительный объем памяти - 22.4 мб
+

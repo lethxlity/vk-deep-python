@@ -1,0 +1,118 @@
+<body class="home">
+    <div class="left stuck">
+      <!--  [Desktop/Tablet]sky_atf -->
+      <div data-pw-desk="sky_atf" id="pwDeskSkyAtf"></div>
+      <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwDeskSkyAtf");
+        })
+      </script>
+    </div>
+    <div class="outer-content">
+      <div class="logo">
+        <img src="https://d33wubrfki0l68.cloudfront.net/c8da8752ff752baf20c1184d519595324a32f000/3a53a/assets/art-icon.png">
+      </div>
+      <div class="intro">
+        <h1>Paint Toys</h1>
+        A small playground of creative canvases to bring out your creative side
+        with a few beautiful limitations inspired by the art world!
+      </div>
+      <!--  [Mobile]leaderboard_atf -->
+      <div data-pw-mobi="leaderboard_atf" id="pwMobiLbAtf" class="mob-ad"></div>
+      <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwMobiLbAtf");
+        })
+      </script>
+      <div class="content">
+        <a class="type-wrap" href="/oil">
+          <div class="type">
+            <div class="left"><img src="https://d33wubrfki0l68.cloudfront.net/b38ba2006dfd10f525b1710c20a942efcb5458cf/151f4/assets/header-oil-paint.png"></div>
+            <div class="right">
+              <div class="content-header">Oil Paints</div>
+              Dripping oils is a great way to explore the permanent and random
+              nature of the art. This is the perfect place to get your Pollock
+              on!
+            </div>
+          </div>
+        </a>
+
+        <a class="type-wrap" href="/one-line">
+          <div class="type">
+            <div class="left">
+              <img src="https://d33wubrfki0l68.cloudfront.net/1e62f9155ae63830b9c208d72eede9269d369a6b/94bc7/assets/header-one-line.png">
+            </div>
+            <div class="right">
+              <div class="content-header">One Line</div>
+              Sometimes limitations can bring out the most in your creativity,
+              embrace your inner Picasso &amp; try your hand at drawing with just a
+              single line.
+            </div>
+          </div>
+        </a>
+
+        <!--  [Mobile]leaderboard_btf -->
+        <div data-pw-mobi="leaderboard_btf" id="pwMobiLbBtf1" class="mob-ad"></div>
+        <script type="text/javascript">
+          window.ramp.que.push(function () {
+              window.ramp.addTag("pwMobiLbBtf1");
+          })
+        </script>
+
+        <a class="type-wrap" href="/calligram">
+          <div class="type">
+            <div class="left">
+              <img src="https://d33wubrfki0l68.cloudfront.net/aaaa782d93cb720e8d1811fcac781a78fdf76032/c8bcd/assets/header-text.png">
+            </div>
+            <div class="right">
+              <div class="content-header">Paint with Text</div>
+              Combine poetry with brush strokes with this unique tool that can
+              only really exist digitally. Calligrams are a great way to express
+              yourself!
+            </div>
+          </div>
+        </a>
+
+        <a class="type-wrap" href="/mondrian">
+          <div class="type">
+            <div class="left">
+              <img src="https://d33wubrfki0l68.cloudfront.net/322c1aad8f89eead566f116290b330e43836c667/fd378/assets/header-mondrian.png">
+            </div>
+            <div class="right">
+              <div class="content-header">Paint like Mondrian</div>
+              Are you a fan of abstract art? This Mondrian'esque art generator
+              is a fun and accessible way to explore the world of neoplasticism
+              and create your own modern masterpiece.
+            </div>
+          </div>
+        </a>
+      </div>
+      <footer class="outro">
+        Paint and have Fun! <br>
+        <div>
+          <a href="https://toms.toys">toms.toys</a> ©
+          <a href="/privacy">privacy</a> ⍟ <a href="/terms">terms</a>
+        </div>
+      </footer>
+    </div>
+    <div class="right stuck">
+      <!--  [Desktop/Tablet]sky_btf -->
+      <div data-pw-desk="sky_btf" id="pwDeskSkyBtf1"></div>
+      <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwDeskSkyBtf1");
+        })
+      </script>
+    </div>
+    <script async="" src="//cdn.intergient.com/ramp_core.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-VJBRK9986D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VJBRK9986D');
+</script>
+
+</body>

@@ -1,0 +1,284 @@
+<body data-puzzle="8-puzzle">
+
+  <div class="game-body">
+    <div class="sidebar">
+      <div class="sidebar-top">
+      <div class="sidebar-wrapper">
+        <a href="/" class="sidebar-header">
+          SLIDING TOYS
+        </a>
+      </div>
+      <div class="sidebar-info">
+        <h1>The 8 puzzle <span id="hash">#0d605df1</span></h1>
+        <p>Get ready to tackle the 8 puzzle - slide tiles to put the numbers in order, but be prepared for a challenge! </p>
+      <div class="scores">
+        <div class="time dotted">
+          <span class="left">Best Time</span><span class="right">N/A</span>
+        </div>
+        <div class="moves dotted">
+          <span class="left">Best Moves</span><span class="right">N/A</span>
+        </div>
+      </div>
+        <div class="sidebar-settings">
+          <div>
+            <input id="settings-time" type="checkbox" checked=""> <label for="settings-time">SHOW TIME</label>
+          </div>
+          <div>
+            <input id="settings-moves" type="checkbox" checked=""> <label for="settings-moves">SHOW MOVES</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mon">
+      <div data-pw-desk="med_rect_atf" id="pwDeskMedRectAtf"></div>
+      <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwDeskMedRectAtf");
+        })
+      </script>
+    </div>
+      <div class="sidebar-footer"><a href="/">sliding.toys</a> © <a href="https://toms.toys">toms.toys</a></div>
+    </div>
+
+    <div class="game-content currentSize" style="min-width: 315px;">
+      <div class="tableWrapper">
+        
+
+        <div class="table" id="table">
+          
+          
+          
+            <div class="row">
+            
+              
+              
+                
+                <button class="cell" data-position="00" data-x="0" data-y="0" data-value="8">
+                  <span>8</span>
+                </button>      
+                
+            
+              
+              
+                
+                <button class="cell" data-position="01" data-x="0" data-y="0" data-value="4">
+                  <span>4</span>
+                </button>      
+                
+            
+              
+              
+                
+                <button class="cell correct" data-position="02" data-x="0" data-y="0" data-value="3">
+                  <span>3</span>
+                </button>      
+                
+            
+            </div>
+          
+            <div class="row">
+            
+              
+              
+                
+                <button class="cell" data-position="10" data-x="0" data-y="0" data-value="2">
+                  <span>2</span>
+                </button>      
+                
+            
+              
+              
+                
+                <button class="cell correct" data-position="11" data-x="0" data-y="0" data-value="5">
+                  <span>5</span>
+                </button>      
+                
+            
+              
+              
+                
+                <button class="cell" data-position="12" data-x="0" data-y="0" data-value="7">
+                  <span>7</span>
+                </button>      
+                
+            
+            </div>
+          
+            <div class="row">
+            
+              
+              
+                
+                <button class="cell" data-position="20" data-x="0" data-y="0" data-value="1">
+                  <span>1</span>
+                </button>      
+                
+            
+              
+              
+                
+                <button class="cell" data-position="21" data-x="0" data-y="0" data-value="6">
+                  <span>6</span>
+                </button>      
+                
+            
+              
+              
+                
+            
+            </div>
+          
+        </div>
+
+        <div class="table bg-table">
+          <canvas id="game-table" width="265" height="265" style="width: 265px; height: 265px;"></canvas>
+        </div>
+
+        <div class="victory hidden">
+          <h3>Sweet!</h3>
+          <p>You're getting the hang of this, time to make a leap to the next level?</p>
+          <div class="victory-buttons">
+            <button id="victory-new">Do Another!</button>
+             <a id="victory-reup" class="button" href="/mystic-square/15-puzzle">Go Bigger</a> 
+          </div>
+        </div>
+
+      </div>
+      <div class="controls above">
+        <div class="buttons">
+          <button id="new">New</button>
+          <button id="reset">Reset</button>
+          <button id="share-sluffle"><span class="share-text">Share this Shuffle</span><span class="shared-text">Copied, Now Paste!</span></button>
+        </div>
+        <div class="controls-settings">
+          <div class="time setting">TIME: 0s</div><div class="moves setting">Moves: 0</div>
+        </div>
+      </div>
+
+      <div class="confetti-screen hidden">
+  <div class="confetti square" style="--color:red; --posX:66%; --delay:1.12s; --speed:4.93s; --posXDirection:320%; --size:1.01; --rotate:-339deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:2%; --delay:3.24s; --speed:4.46s; --posXDirection:-200%; --size:1.04; --rotate:-357deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:31%; --delay:1.52s; --speed:4.68s; --posXDirection:440%; --size:1.1; --rotate:-345deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:99%; --delay:3.4s; --speed:4.36s; --posXDirection:-350%; --size:1.01; --rotate:-324deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:58%; --delay:0.92s; --speed:4.8s; --posXDirection:-250%; --size:1.09; --rotate:-345deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:7%; --delay:0.44s; --speed:4.2s; --posXDirection:290%; --size:1.13; --rotate:-314deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:48%; --delay:1.36s; --speed:4.98s; --posXDirection:-160%; --size:1.05; --rotate:-309deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:49%; --delay:2.88s; --speed:4.56s; --posXDirection:-40%; --size:1.17; --rotate:-339deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:24%; --delay:0.68s; --speed:4.79s; --posXDirection:-380%; --size:1.09; --rotate:-341deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:8%; --delay:0.84s; --speed:4.72s; --posXDirection:330%; --size:0.93; --rotate:-319deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:13%; --delay:1.48s; --speed:4.23s; --posXDirection:0%; --size:0.93; --rotate:-298deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:96%; --delay:2.88s; --speed:4.49s; --posXDirection:230%; --size:0.94; --rotate:-315deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:69%; --delay:0.08s; --speed:4.98s; --posXDirection:70%; --size:1.09; --rotate:-324deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:62%; --delay:1.24s; --speed:4.79s; --posXDirection:-300%; --size:1.19; --rotate:-319deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:63%; --delay:1.08s; --speed:4.66s; --posXDirection:370%; --size:1.08; --rotate:-321deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:16%; --delay:0.56s; --speed:4.94s; --posXDirection:-340%; --size:1.04; --rotate:-291deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:23%; --delay:0.08s; --speed:4.64s; --posXDirection:0%; --size:1.17; --rotate:-331deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:24%; --delay:1.52s; --speed:4.49s; --posXDirection:190%; --size:1.19; --rotate:-308deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:16%; --delay:0.72s; --speed:4.65s; --posXDirection:100%; --size:1.15; --rotate:-316deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:44%; --delay:0.92s; --speed:4.15s; --posXDirection:-270%; --size:1.06; --rotate:-358deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:70%; --delay:0.96s; --speed:4.96s; --posXDirection:450%; --size:0.93; --rotate:-291deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:4%; --delay:2.76s; --speed:4.36s; --posXDirection:80%; --size:0.97; --rotate:-354deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:11%; --delay:2.48s; --speed:4.06s; --posXDirection:260%; --size:1.15; --rotate:-290deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:24%; --delay:3.28s; --speed:4.22s; --posXDirection:170%; --size:1.18; --rotate:-328deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:1%; --delay:2.44s; --speed:4.31s; --posXDirection:240%; --size:1.08; --rotate:-301deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:55%; --delay:0s; --speed:4.25s; --posXDirection:480%; --size:1.05; --rotate:-335deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:3%; --delay:1.44s; --speed:4.77s; --posXDirection:170%; --size:1.19; --rotate:-316deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:64%; --delay:2.84s; --speed:4.47s; --posXDirection:270%; --size:1.02; --rotate:-323deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:93%; --delay:2.2s; --speed:4.08s; --posXDirection:10%; --size:1.19; --rotate:-355deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:25%; --delay:2.12s; --speed:4.26s; --posXDirection:0%; --size:1.05; --rotate:-359deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:9%; --delay:2.32s; --speed:4s; --posXDirection:-440%; --size:1; --rotate:-357deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:75%; --delay:3.12s; --speed:4.16s; --posXDirection:-380%; --size:1.11; --rotate:-348deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:40%; --delay:1.56s; --speed:4.64s; --posXDirection:280%; --size:1.19; --rotate:-346deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:69%; --delay:1.12s; --speed:4.67s; --posXDirection:-220%; --size:1.17; --rotate:-357deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:51%; --delay:0.16s; --speed:4.33s; --posXDirection:-180%; --size:1.03; --rotate:-352deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:11%; --delay:2.52s; --speed:4.04s; --posXDirection:20%; --size:1.06; --rotate:-357deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:8%; --delay:3.04s; --speed:4.16s; --posXDirection:270%; --size:1.17; --rotate:-308deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:50%; --delay:2.84s; --speed:4.36s; --posXDirection:-290%; --size:0.92; --rotate:-305deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:6%; --delay:1.52s; --speed:4.41s; --posXDirection:150%; --size:1.19; --rotate:-290deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:70%; --delay:0.12s; --speed:4.13s; --posXDirection:-300%; --size:0.93; --rotate:-289deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:73%; --delay:0.68s; --speed:4.2s; --posXDirection:170%; --size:0.92; --rotate:-305deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:77%; --delay:2.72s; --speed:4.23s; --posXDirection:-70%; --size:0.95; --rotate:-341deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:55%; --delay:3.56s; --speed:4.85s; --posXDirection:160%; --size:0.98; --rotate:-314deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:9%; --delay:3.8s; --speed:4.1s; --posXDirection:200%; --size:1.17; --rotate:-292deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:46%; --delay:0.84s; --speed:4.26s; --posXDirection:480%; --size:1.03; --rotate:-344deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:30%; --delay:2.8s; --speed:4.2s; --posXDirection:470%; --size:0.94; --rotate:-330deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:99%; --delay:1.96s; --speed:4.27s; --posXDirection:-270%; --size:1.17; --rotate:-306deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:11%; --delay:3.28s; --speed:4.48s; --posXDirection:340%; --size:1.05; --rotate:-319deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:89%; --delay:1.36s; --speed:4.36s; --posXDirection:50%; --size:1.19; --rotate:-291deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:94%; --delay:3.8s; --speed:4.75s; --posXDirection:-460%; --size:0.92; --rotate:-318deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:82%; --delay:2.32s; --speed:4.87s; --posXDirection:-220%; --size:1.16; --rotate:-302deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:66%; --delay:2.12s; --speed:4.94s; --posXDirection:200%; --size:1.17; --rotate:-309deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:62%; --delay:0.2s; --speed:4.66s; --posXDirection:-130%; --size:1.1; --rotate:-351deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:64%; --delay:1s; --speed:4.37s; --posXDirection:130%; --size:0.98; --rotate:-298deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:29%; --delay:3.68s; --speed:4.84s; --posXDirection:-370%; --size:1.15; --rotate:-344deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:2%; --delay:0.28s; --speed:4.07s; --posXDirection:-330%; --size:0.95; --rotate:-305deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:69%; --delay:3.76s; --speed:4.6s; --posXDirection:420%; --size:1.18; --rotate:-337deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:94%; --delay:1.76s; --speed:4.17s; --posXDirection:-230%; --size:1.08; --rotate:-314deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:44%; --delay:2.64s; --speed:4.99s; --posXDirection:-200%; --size:0.93; --rotate:-309deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:58%; --delay:1.6s; --speed:4.63s; --posXDirection:70%; --size:1.08; --rotate:-331deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:47%; --delay:2.32s; --speed:4.7s; --posXDirection:-300%; --size:1.07; --rotate:-324deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:47%; --delay:2.48s; --speed:4.31s; --posXDirection:-80%; --size:1.04; --rotate:-336deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:47%; --delay:3.04s; --speed:4.85s; --posXDirection:-370%; --size:0.99; --rotate:-328deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:18%; --delay:2.12s; --speed:4.53s; --posXDirection:30%; --size:1.15; --rotate:-307deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:94%; --delay:3.52s; --speed:4.21s; --posXDirection:-80%; --size:0.91; --rotate:-328deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:17%; --delay:2.32s; --speed:4.5s; --posXDirection:120%; --size:1.16; --rotate:-352deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:27%; --delay:2.4s; --speed:4.39s; --posXDirection:120%; --size:1.13; --rotate:-352deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:1%; --delay:0.52s; --speed:4.58s; --posXDirection:-420%; --size:0.97; --rotate:-354deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:84%; --delay:2s; --speed:4.53s; --posXDirection:400%; --size:1.17; --rotate:-304deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:8%; --delay:3.68s; --speed:4.94s; --posXDirection:-160%; --size:1.17; --rotate:-320deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:71%; --delay:3.08s; --speed:4.32s; --posXDirection:30%; --size:1.07; --rotate:-343deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:36%; --delay:1.4s; --speed:4.45s; --posXDirection:-40%; --size:1.11; --rotate:-297deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:10%; --delay:3.12s; --speed:4.25s; --posXDirection:-80%; --size:0.99; --rotate:-356deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:78%; --delay:0.36s; --speed:4.41s; --posXDirection:90%; --size:0.99; --rotate:-309deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:32%; --delay:2.28s; --speed:4.5s; --posXDirection:-230%; --size:1.05; --rotate:-331deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:83%; --delay:0.68s; --speed:4.54s; --posXDirection:-310%; --size:1.07; --rotate:-349deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:10%; --delay:1.28s; --speed:4.08s; --posXDirection:460%; --size:0.97; --rotate:-291deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:19%; --delay:0.16s; --speed:4.22s; --posXDirection:280%; --size:0.9; --rotate:-305deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:23%; --delay:0.08s; --speed:4.04s; --posXDirection:-290%; --size:0.98; --rotate:-344deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:5%; --delay:0.84s; --speed:4.16s; --posXDirection:-330%; --size:0.94; --rotate:-315deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:54%; --delay:1.76s; --speed:4.45s; --posXDirection:80%; --size:1.03; --rotate:-323deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:80%; --delay:2.64s; --speed:4.22s; --posXDirection:220%; --size:1.06; --rotate:-337deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:44%; --delay:2.36s; --speed:4.12s; --posXDirection:-500%; --size:1.01; --rotate:-355deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:55%; --delay:0.32s; --speed:4.38s; --posXDirection:280%; --size:1.06; --rotate:-330deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:61%; --delay:1.6s; --speed:4.15s; --posXDirection:130%; --size:0.95; --rotate:-294deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:86%; --delay:0.52s; --speed:4.24s; --posXDirection:-480%; --size:1.19; --rotate:-300deg;"></div>
+  <div class="confetti square" style="--color:blue; --posX:81%; --delay:0.04s; --speed:4.69s; --posXDirection:-250%; --size:1.19; --rotate:-327deg;"></div>
+  <div class="confetti square" style="--color:red; --posX:62%; --delay:2.76s; --speed:4.58s; --posXDirection:40%; --size:1.16; --rotate:-312deg;"></div>
+  <div class="confetti rectangle" style="--color:blue; --posX:92%; --delay:0.56s; --speed:4.19s; --posXDirection:-310%; --size:0.95; --rotate:-357deg;"></div>
+  <div class="confetti rectangle" style="--color:red; --posX:18%; --delay:2.64s; --speed:4.95s; --posXDirection:460%; --size:1.15; --rotate:-352deg;"></div>
+</div>
+    </div>
+
+    <div class="right-ad">
+      
+      <div data-pw-desk="sky_atf" id="pwDeskSkyAtf"></div>
+      <script type="text/javascript">
+        window.ramp.que.push(function () {
+            window.ramp.addTag("pwDeskSkyAtf");
+        })
+      </script>
+    </div>
+
+
+  </div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+
+
+
+
+<script src="https://d33wubrfki0l68.cloudfront.net/bundles/282541f9c67589de641f602371522a6e31593ede.js"></script>
+
+<script async="" src="//cdn.intergient.com/ramp_core.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-6GSDJK7L0S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6GSDJK7L0S');
+</script>
+
+</body>

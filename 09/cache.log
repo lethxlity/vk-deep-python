@@ -1,9 +1,9 @@
-2023-05-17 00:23:59,502 DEBUG Cache created, size: 2
-2023-05-17 00:23:59,502 INFO SET value: aaa, NEW key: k1, SUCCESS
-2023-05-17 00:23:59,502 INFO SET value: val2, NEW key: k2, SUCCESS
-2023-05-17 00:23:59,502 INFO --------CAPACITY EXCEEDED--------
-2023-05-17 00:23:59,502 INFO SET value: val3, NEW key: k3, SUCCESS
-2023-05-17 00:23:59,502 INFO GET value: None, key: k1, NO KEY
-2023-05-17 00:23:59,502 INFO GET value: val2, key: k2, SUCCESS
-2023-05-17 00:23:59,502 INFO GET value: val3, key: k3, SUCCESS
-2023-05-17 00:23:59,502 ERROR raised creating cache, limit must be > 0, current limit value: -1
+2023-05-28 17:07:26,352 DEBUG ----------------------------------------------------------Cache created, size: 2
+2023-05-28 17:07:26,352 INFO --------------------------------------------SET value: aaa, NEW key: k1, SUCCESS
+2023-05-28 17:07:26,352 INFO -------------------------------------------SET value: val2, NEW key: k2, SUCCESS
+2023-05-28 17:07:26,352 INFO -------------------------------------------------------CAPACITY EXCEEDED--------
+2023-05-28 17:07:26,353 INFO -------------------------------------------SET value: val3, NEW key: k3, SUCCESS
+2023-05-28 17:07:26,353 INFO ------------------------------------------------GET value: None, key: k1, NO KEY
+2023-05-28 17:07:26,353 INFO -----------------------------------------------GET value: val2, key: k2, SUCCESS
+2023-05-28 17:07:26,353 INFO -----------------------------------------------GET value: val3, key: k3, SUCCESS
+2023-05-28 17:07:26,353 ERROR ---------------raised creating cache, limit must be > 0, current limit value: -1
